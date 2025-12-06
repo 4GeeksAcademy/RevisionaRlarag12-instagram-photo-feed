@@ -14,6 +14,7 @@
     <title>Instagram feed</title>
 </head>
 <body>
+    <!-- Barra principal-->
     <nav class="navbar bg-light">
         <div class="container-fluid">
            <a class="navbar-brand text-dark flex-grow-1" href="#">
@@ -59,31 +60,78 @@
     </nav>
     <!--BARRA DEL CUERPO --> 
     <nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
  </div>
 </nav>
 <!--BOTONES DEL CUERPO --> 
 <div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+    <!--Fotos en linea-->
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-4"><img class="img" src="https://cdn.sanity.io/images/5vm5yn1d/pro/41c7e7ce298604b0801fc2b1b76371a47e9ebb83-950x633.jpg?fm=webp&q=80"></div>
+            <div class="col-4"><img class="img" src="https://marketplace.canva.com/AauWc/MAGuOvAauWc/1/tl/canva-nature-landscape-MAGuOvAauWc.jpg"></div>
+            <div class="col-4"><img class="img" src="https://o2cw.es/wp-content/uploads/2025/02/Consejos-para-cada-estilo-de-natacion.webp"></div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-4"><img class="img" src="https://i.blogs.es/c7ed10/screenshot_90/1366_2000.jpeg"></div>
+            <div class="col-4"><img class="img" src="https://chemitec.com.br/wp-content/uploads/2020/01/gato.jpg"></div>
+            <div class="col-4"><img class="img" src="https://images.comicbooktreasury.com/wp-content/uploads/2020/10/Daredevil-Reading-Order-Comicbooktreasury-705x470.jpg"></div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-4"><img class="img2" src="https://c.files.bbci.co.uk/D445/production/_106414345_playaelsalvador.jpg"></div>
+            <div class="col-4"><img class="img2" src="https://img.freepik.com/foto-gratis/hermosa-foto-olas-mar_58702-11211.jpg?semt=ais_hybrid&w=740&q=80"></div>
+            <div class="col-4"><img class="img2" src="https://media.vogue.mx/photos/5c07028beccb767eb579ef95/2:3/w_2560%2Cc_limit/dua_lipa__7600.jpg"></div>
+        </div>
+    </div>
+  </div>
+  <!--Fotos en columna-->
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-    <div class="container">
+    <div class="container p-2">
         <div class="post">
             <div class="head-post">
-                <div><i class="fa-brands fa-html5"></i></div>
-                <div class="text"><p><strong>HTML5</strong></p><p>Rigoberto</p></div>
-                <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                <div class="text"><h4>Titulo de foto 1!</h4></div>
+                <div>8/12</div>
             </div>
             <div><img class="img" src="https://img.freepik.com/foto-gratis/hermosa-foto-olas-mar_58702-11211.jpg?semt=ais_hybrid&w=740&q=80"></div>
             <div class="body-post">
-                <div class="body-icons">
-                    <div class="icon1"><i class="fa-regular fa-heart"></i></div>
-                    <div class="icon2"><i class="fa-regular fa-comment"></i></div>
-                    <div class="icon3"><i class="fa-regular fa-paper-plane"></i></div>
-                    <div class="icon4"><i class="fa-regular fa-bookmark"></i></div>
+                 <div class="body-text">
+                    <p>Liked by <strong>4geeks academy, Dua Lipa, Henry Cavill </strong>and <strong>others</strong></p>
+                    <p>Other text bla bla bla.San Giorgio Maggiore al Crepuscolo is approximately two-by-three feet and painted in oil on canvas. It depicts mysterious buildings that seem to magically appear from the surrounding landscape, they almost seem to float in the background. The forms are gently inserted, though not enough to disguise their identity. </p>
                 </div>
-                <div class="body-text">
+            </div>
+        </div>
+    </div>
+     <div class="container p-2">
+        <div class="post">
+            <div class="head-post">
+                <div class="text"><h4>Titulo de foto 2!</h4></div>
+                <div>8/12</div>
+            </div>
+            <div><img class="img" src="https://cdn.sanity.io/images/5vm5yn1d/pro/41c7e7ce298604b0801fc2b1b76371a47e9ebb83-950x633.jpg?fm=webp&q=80"></div>
+            <div class="body-post">
+                 <div class="body-text">
+                    <p>Liked by <strong>4geeks academy, Dua Lipa, Henry Cavill </strong>and <strong>others</strong></p>
+                    <p>Other text bla bla bla.San Giorgio Maggiore al Crepuscolo is approximately two-by-three feet and painted in oil on canvas. It depicts mysterious buildings that seem to magically appear from the surrounding landscape, they almost seem to float in the background. The forms are gently inserted, though not enough to disguise their identity. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container p-2">
+        <div class="post">
+            <div class="head-post">
+                <div class="text"><h4>Titulo de foto 3!</h4></div>
+                <div>8/12</div>
+            </div>
+            <div><img class="img" src="https://marketplace.canva.com/AauWc/MAGuOvAauWc/1/tl/canva-nature-landscape-MAGuOvAauWc.jpg"></div>
+            <div class="body-post">
+                 <div class="body-text">
                     <p>Liked by <strong>4geeks academy, Dua Lipa, Henry Cavill </strong>and <strong>others</strong></p>
                     <p>Other text bla bla bla.San Giorgio Maggiore al Crepuscolo is approximately two-by-three feet and painted in oil on canvas. It depicts mysterious buildings that seem to magically appear from the surrounding landscape, they almost seem to float in the background. The forms are gently inserted, though not enough to disguise their identity. </p>
                 </div>
